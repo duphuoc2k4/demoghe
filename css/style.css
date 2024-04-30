@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+ 
+ background-color:#1a1d29;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.movie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #d9d9d9;
+  height: 32px;
+  width: 32px;
+  margin: 3px;
+  font-size: 50px;
+
+ 
+ border: #678b37 solid;
+ color: black;
+ opacity: 1;
+}
+
+.seat.selected {
+  background-color: green;
+}
+
+.seat.sold {
+  background-color: #fff;
+}
+.seat-selected{
+  background-color: #678b37;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: red;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase{
+  border-top: red solid;
+}
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+
+
+p.text{
+    margin: 5px 0;
+}
+
+p.text span{
+    color: rgb(158, 248, 158);
+}
+/* css t chỉnh */
+.seatrow{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#buyButton{
+  
+  background: linear-gradient(120deg, yellow, #2a73dd);
+  padding: 15.5px 46px;
+  border: none;
+  border-radius: 8px;
+  letter-spacing: 0.03rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: .5s;
+  cursor: pointer;
+ 
+ 
+}
+#buyButton:hover {
+opacity: 1;
+ 
+}
+.row{
+
+}
+.btncontainer {
+  display: flex;
+  margin: auto;
+ width: 25%;  
+}
+#seats{
+  display: inline;
+  text-align: center;
+  font-size: 20px;
+  
+}
+.seatrow{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.topcol{
+  border: #414863 solid;
+}
+.col-md-5{
+
+
+padding: 20px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border: #414863 solid;
+
+}
+.topcol{
+  
+  margin: 6px;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  color: #d9d9d9;
+  
+
+}
+.topcol {
+  display: flex;
+  justify-content: left;
+}
+.topcol div {
+  padding: 0 20px;
+
+  
+}
+.topcol .btnchange{
+  background-color: #fcfcfc;
+  color: black;
+}
+/* .col-7  h3,p{
+  color: white;
+
+} */
+
+.col-md-5 .THONGTIN{
+  height:350px;
+  border: none;
+  
+   
+}
+/* .col-md-5 .col-5 img{
+  width: 100%;
+  
+} */
+.toandien{
+
+
+}
+.overslow{
+  
+  height: 300px;
+
+
+}
+.scroll{
+  overflow-y: scroll;
+
+}
+.pay{
+  
+  border-top: black solid;
+  width: 100%;
+
+  
+}
+.bothbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.pay h5{
+  color: white;
+  font-size: 20px;
+}
+#bookingInfo{
+  height: 100px;
+}
+#bookingDetails{
+  height: 100px;
+  color: white;
+ 
+}
+.THONGTIN{
+
+}
+.THONGTIN__IMG {
+ 
+
+}
+.THONGTIN2{
+  color: aliceblue
+}
+.THONGTIN .THONGTIN__IMG img{
+
+}
+@media screen and (max-width:2000px) {
+  .THONGTIN .THONGTIN__IMG img{
+    width: 210px;
+  }
+  
+}
+@media screen and (max-width:1238px) {
+  .THONGTIN .THONGTIN__IMG img{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:912px) {
+  .bothbtn .btncontainer{
+   
+
+    
+   width: 50%;
+   
+  }
+  
+}
+
+
+
+@media screen and (max-width: 856px) {
+  .col-md-5 .col-5 img{
+    width: 200px;
+    height: 250px;
+    
+    
+  }
+  .bothbtn .btncontainer{
+   
+
+    
+  margin:13.5px 11px;
+    
+   }
+   
+ }
+ /* @media screen and (max-width: 778px) {
+  .col-md-5 .col-5 img{
+    width: 200px;
+    height: 250px;
+    
+    
+  } */
+  /* .bothbtn .btncontainer{
+   
+
+    
+  margin:13.5px 19px;
+    
+   }
+   
+ } */
+
+
