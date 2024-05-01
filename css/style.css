@@ -120,6 +120,7 @@ p.text span{
 }
 /* css t chỉnh */
 .seatrow{
+  color: white;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -220,7 +221,7 @@ padding: 20px;
 }
 .overslow{
   
-  height: 300px;
+  height: 415px;
 
 
 }
